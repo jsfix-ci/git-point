@@ -1,4 +1,4 @@
-import differenceInMilliseconds from 'date-fns/difference_in_milliseconds';
+import differenceInMilliseconds from 'date-fns/differenceInMilliseconds';
 
 export function formatEventsToRender(events = []) {
   return events
