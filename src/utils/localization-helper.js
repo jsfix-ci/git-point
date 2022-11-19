@@ -1,3 +1,4 @@
+import formatDistance from 'date-fns/formatDistance';
 import React from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
 import distanceInWords from 'date-fns/distance_in_words';
@@ -142,5 +143,5 @@ export function relativeTimeToNow(date) {
     },
   };
 
-  return distanceInWords(date, new Date(), { locale: localeConfig });
+  return formatDistance(new Date(), date, { locale: localeConfig });
 }
